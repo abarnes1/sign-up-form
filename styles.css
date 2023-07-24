@@ -26,6 +26,7 @@ body {
   display: flex;
   align-items: center;
   flex-shrink: 1;
+  position: relative;
 }
 
 .image-text {
@@ -36,6 +37,13 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 72px;
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  font-size: 1rem;
 }
 
 p {
