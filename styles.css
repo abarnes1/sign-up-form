@@ -48,6 +48,13 @@ input {
   border-width: 2px;
 }
 
+input, input:valid:not(:required) {
+  padding: 4px;
+  border-radius: 4px;
+  border: 2px solid grey;
+  background-color: white;
+}
+
 input:not(:placeholder-shown):not(:focus):invalid,
 input:focus:invalid {
   border-color: var(--warning-dark);
@@ -69,12 +76,7 @@ input:focus:invalid {
   background-color: var(--warning-light);
 }
 
-input, input:valid:not(:required) {
-  padding: 4px;
-  border-radius: 4px;
-  border: 2px solid grey;
-  background-color: white;
-}
+
 
 input:valid {
   border-color: var(--success-dark)
