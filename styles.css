@@ -6,6 +6,7 @@
 
 body {
   background-color: #494949;
+  font-family: sans-serif;
 }
 
 button {
@@ -16,12 +17,10 @@ p {
   margin: 20px 0px;
 }
 
-.bottom-shadow {
-  box-shadow: 0px 5px red;
-}
-
 .content-section {
   padding-left: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .content-container {
@@ -30,17 +29,38 @@ p {
   flex-direction: column;
   position: relative;
   justify-content: center;
+  background-color: rgb(250, 250, 250);
+}
+
+.content-container > * {
+  padding-left: 10pxss;
 }
 
 .dev-border {
   border: 1px solid black;
 }
 
-.field-group {
-  margin: 10px 0px;
-  padding-left: 1rem;
+.fields-section {
+  box-shadow: 0px 4px 5px red;
+  background-color: white;
+  padding-top: 10px;
+  font-size: 1.25rem;
 }
 
+.field {
+  max-width: 200px;
+}
+
+.field > label {
+  font-size: 0.75rem;
+}
+
+.field-group {
+  margin: 0px 0px 15px 0px;
+  padding-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .image-container {
   width: 40%;

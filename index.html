@@ -30,27 +30,39 @@
         </p>
       </div>
 
-      <form class="dev-border" action="">
-        <div class="dev-border bottom-shadow">
+      <form class="dev-border" action="" id="signup">
+        <div class="dev-border fields-section">
           <span class="content-section">Let's do this!</span>
 
           <div class="field-group">
-            <label for="first-name">First Name <input type="text" name="first-name" id="first-name"></label>
-            <label for="last-name">Last Name <input type="text" name="last-name" id="last-name"></label>
+            <div class="field">
+              <label for="first-name">First Name <input type="text" name="first-name" id="first-name"></label>
+            </div>
+            <div class="field">
+              <label for="last-name">Last Name <input type="text" name="last-name" id="last-name"></label>
+            </div>
           </div>
 
           <div class="field-group">
-            <label for="email">Email <input type="email" name="email" id="email"></label>
-            <label for="phone-number">Phone Number <input type="text" name="phone-number" id="phone-number"></label>
+            <div class="field">
+              <label for="email">Email <input type="email" name="email" id="email"></label>  
+            </div>
+            <div class="field">
+              <label for="phone-number">Phone Number <input type="text" name="phone-number" id="phone-number"></label>  
+            </div>
           </div>
 
           <div class="field-group">
-            <label for="password">Password <input type="password" name="password" id="password"></label>
-            <label for="confirm-password">Confirm Password <input type="password" name="confirm-password" id="confirm-password"></label>
+            <div class="field">
+              <label for="password">Password <input type="password" name="password" id="password"></label>
+            </div>
+            <div class="field">
+              <label for="confirm-password">Confirm Password <input type="password" name="confirm-password" id="confirm-password"></label>
+            </div>
           </div>
         </div>
 
-        <span class="field-group"><button>Create Account</button></span>
+        <span class="field-group"><button form="signup">Create Account</button></span>
       </form>
 
       <span class="dev-border content-section">Already have an Account? <a href="">Log in</a></span>
