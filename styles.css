@@ -3,6 +3,13 @@
   src: url("fonts/Norse-Bold.otf");
 }
 
+:root {
+  --success-light: rgba(100, 200, 100, 0.3);
+  --success-dark: rgb(100, 220, 100);
+  --warning-light: rgba(200, 100, 100, 0.3);
+  --warning-dark: rgb(220, 100, 100);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +31,7 @@ button {
   border: none;
   border-radius: 10px;
   color: white;
+  font-size: 1.25rem;
   font-weight: bold;
   padding: 15px 35px;
 }
@@ -36,8 +44,44 @@ img {
   height: 150px;
 }
 
+input {
+  border-width: 2px;
+}
+
+input:not(:placeholder-shown):not(:focus):invalid,
+input:focus:invalid {
+  border-color: var(--warning-dark);
+  outline-color: var(--warning-dark);
+}
+
+input:focus:valid, input:valid:not(:required):not(:placeholder-shown) {
+  border-color: var(--success-dark);
+  background-color: var(--success-light);
+  outline-color: var(--success-dark);
+}
+
+input:not(:focus):valid:not(:required):not(:placeholder-shown) {
+  background-color: unset;
+}
+
+input:focus:invalid {
+  border-color: var(--warning-dark);
+  background-color: var(--warning-light);
+}
+
+input, input:valid:not(:required) {
+  padding: 4px;
+  border-radius: 4px;
+  border: 2px solid grey;
+  background-color: white;
+}
+
+input:valid {
+  border-color: var(--success-dark)
+}
+
 label {
-  font-size: 0.75rem;
+  font-size: 0.66rem;
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -124,4 +168,5 @@ p {
   bottom: 5px;
   text-align: center;
   font-size: 1rem;
+  font-family: sans-serif;
 }
