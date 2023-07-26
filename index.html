@@ -10,8 +10,9 @@
 <body>
   <div class="main-container">
     <div class="image-container">
+      
       <div class="image-text">
-        <img src="images/odin-lined.png" style="height: 150px;" alt="the odin project logo">
+        <img src="images/odin-lined.png" alt="the odin project logo">
         <span>ODIN</span> 
 
         <span class="photo-credit">Photo Credit Here</span>
@@ -19,20 +20,21 @@
     </div>
 
     <div class="content-container">
-      <div class="dev-border content-section">
+      <div class="pad-left" >
         <p>
           This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-          Sign up now to get started.
+          <br>Sign up <em>now</em> to get started.
         </p>
 
         <p>
-          You know you want to.
+          You <em>know</em> you want to.
         </p>
       </div>
-
-      <form class="dev-border" action="" id="signup">
-        <div class="dev-border fields-section">
-          <span class="content-section">Let's do this!</span>
+      
+      <div class="fields-section pad-left">
+        <form class="" action="" id="signup">
+          <!-- <span>Let's do this!</span> -->
+          <p>Let's do this!</p>
 
           <div class="field-group">
             <div class="field">
@@ -60,12 +62,11 @@
               <label for="confirm-password">Confirm Password <input type="password" name="confirm-password" id="confirm-password"></label>
             </div>
           </div>
-        </div>
+        </form>
+      </div>
 
-        <span class="field-group"><button form="signup">Create Account</button></span>
-      </form>
-
-      <span class="dev-border content-section">Already have an Account? <a href="">Log in</a></span>
+      <span class="pad-left"><button form="signup">Create Account</button></span>
+      <span class="pad-left">Already have an Account? <a href="">Log in</a></span>
     </div>
   </div>
 </body>
