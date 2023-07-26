@@ -31,9 +31,10 @@ button {
   border: none;
   border-radius: 10px;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
   padding: 15px 35px;
+  margin-top: 25px;
 }
 
 form {
@@ -51,7 +52,7 @@ input {
 input, input:valid:not(:required) {
   padding: 4px;
   border-radius: 4px;
-  border: 2px solid grey;
+  border: 2px solid lightgray;
   background-color: white;
 }
 
@@ -151,7 +152,7 @@ p {
 }
 
 .pad-left {
-  padding-left: 1.25rem;
+  padding-left: 2.5rem;
 }
 
 .main-container {
